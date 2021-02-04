@@ -1,0 +1,154 @@
+ body {
+    background-color: black;
+    margin: 0px;
+    font-family: 'Sansita Swashed', cursive;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 20px; 
+}
+
+
+
+.nav {
+    display: flex;  
+    justify-content: space-between;
+    padding: 20px;
+    margin: 5px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav > .left-side > div {
+    margin-right: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid red;
+}
+
+.active-nav-link a {
+    color:  white !important;
+
+}
+
+.nav-link-wrapper {
+    height: 15px;
+    border-bottom: 8px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: teal;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid teal;
+}
+
+.nav-link-wrapper a:hover {
+    border-bottom: teal;
+}
+    
+
+.brand {
+    color: teal;
+    font-size: 30px;
+}
+
+
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 350px;
+    width: 100%; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-right: 100px;
+    padding-left: 100px;
+
+}
+
+.logo {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.img-text .subtitle {
+    transition: 1s;
+    color: transparent;
+    font-weight: 600;
+}
+
+.img-text:hover .subtitle {
+    font-size: 25px;
+    font-weight: 600;
+    color: teal;
+}
+
+.img-darken {
+    transition: 2s;
+    filter: brightness(10%);
+}
+
+
+
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-img-wrapper {
+    margin-left: 10px;
+    /* width:70%;
+    height: auto; */
+}
+
+#im {
+    width:80%;
+    height: auto;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+    width: 60%;
+    font-size: 20px;
+    height: auto;
+}
+
+.profile-content-wrapper h1 {
+    color: teal;
+}
+
+.profile-content-wrapper p {
+    color: white;
+} 
